@@ -271,7 +271,7 @@ function handleShowResult() {
     let scoreMessage;
 
     if (attemptedCount < totalQuestions) {
-        scoreMessage = `테스트를 조기 종료했습니다.<br>총 ${totalQuestions} 문제 중 **${attemptedCount} 문제** 시도하여 **${correctCount} 문제** 맞춤`;
+        scoreMessage = `테스트를 조기 종료했습니다.<br><br>총 ${totalQuestions} 문제 중 <br>${attemptedCount} 문제 시도하여 <br>${correctCount} 문제 맞춤`;
     } else {
         scoreMessage = `총 ${totalQuestions} 문제 중 **${correctCount} 문제** 맞춤`;
     }

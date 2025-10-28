@@ -2,28 +2,26 @@
    1. 기본 및 모바일 반응형 설정
    ========================================================================= */
 :root {
-    /* 색상 팔레트 */
-    --color-primary: #5A7FDD;      /* 주 색상 (버튼, 헤딩) */
-    --color-secondary: #8BC9FF;    /* 보조 색상 (강조) */
-    --color-background: #F8F9FA;  /* 밝은 배경 */
-    --color-surface: #FFFFFF;     /* 카드/화면 배경 */
-    --color-text-dark: #343A40;    /* 진한 텍스트 */
-    --color-text-light: #6C757D;   /* 연한 텍스트 */
-    --color-success: #28A745;      /* 성공/맞춤 */
-    --color-danger: #DC3545;       /* 위험/틀림 */
-    --color-warning: #FFC107;      /* 경고/정답확인 */
+    /* 색상 팔레트: 모던하고 은은한 톤 */
+    --color-primary-view: #6A9BFB;  /* 주 색상 1 (전체 단어 보기) */
+    --color-primary-test: #507DD9;  /* 주 색상 2 (테스트 시작) */
+    --color-background: #E8EAEF;    /* 은은한 회색 배경 */
+    --color-surface: #FFFFFF;       /* 카드/화면 배경 */
+    --color-text-dark: #343A40;     /* 진한 텍스트 */
+    --color-text-light: #6C757D;    /* 연한 텍스트 */
+    --color-success: #64df81;       /* 성공/맞춤 (초록) */
+    --color-danger: #e66c78;        /* 위험/틀림 (빨강) */
+    --color-warning: #FFC107;       /* 경고/정답확인 (주황) */
+    --color-neutral-bg: #F8F9FA;    /* 버튼 배경용 중립색 */
 }
 
-/* Google Fonts: Noto Sans KR 불러오기 (index.html <head>에 추가 권장) 
-   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
-*/
-
+/* 글꼴: Noto Sans KR (index.html <head>에 링크되어 있어야 함) */
 body {
     font-family: 'Noto Sans KR', sans-serif;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 15px; /* 모바일에서 적절한 여백 */
+    padding: 20px 10px;
     background-color: var(--color-background);
     min-height: 100vh;
     color: var(--color-text-dark);
@@ -32,13 +30,13 @@ body {
 
 .screen {
     background: var(--color-surface);
-    padding: 25px;
-    border-radius: 12px; /* 부드러운 모서리 */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* 은은한 그림자 */
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px; /* 모바일 뷰 기준 최대 폭 */
+    max-width: 500px;
     text-align: center;
-    box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
+    box-sizing: border-box;
 }
 
 .hidden {
@@ -46,26 +44,25 @@ body {
 }
 
 /* =========================================================================
-   2. 폰트, 타이포그래피, 헤딩
+   2. 타이포그래피 및 헤딩 (이전과 동일)
    ========================================================================= */
 h1 {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 700;
-    color: var(--color-primary);
-    margin-bottom: 20px;
+    color: var(--color-primary-test);
+    margin-bottom: 25px;
     padding-bottom: 10px;
-    border-bottom: 2px solid var(--color-secondary);
 }
 
 h2 {
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: 1.6em;
+    font-weight: 500;
     color: var(--color-text-dark);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* =========================================================================
-   3. 버튼 및 컨트롤 (클릭 영역 확대)
+   3. 버튼 및 컨트롤 (주요 수정)
    ========================================================================= */
 
 /* 드롭다운 */
@@ -74,50 +71,65 @@ h2 {
 }
 
 #date-select {
-    padding: 12px 15px; /* 패딩 증가 */
-    border-radius: 8px;
+    padding: 14px 15px;
+    border-radius: 10px;
     border: 1px solid #CED4DA;
     font-size: 1.1em;
-    min-width: 80%; /* 모바일에서 넓게 */
-    appearance: none; /* 기본 화살표 숨김 */
-    background: white url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%235A7FDD' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 10px center;
+    min-width: 85%;
+    background-color: var(--color-neutral-bg);
+    appearance: none;
+    background: var(--color-neutral-bg) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23507DD9' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 10px center;
     background-size: 18px;
 }
 
 /* 모든 버튼 기본 스타일 */
 button {
-    padding: 15px 25px; /* 버튼 패딩 크게 */
+    padding: 18px 20px; /* 💡 수정: 버튼 높이 키움 */
     margin: 8px 5px;
     border: none;
-    border-radius: 8px;
+    border-radius: 60px;
     cursor: pointer;
     font-weight: 700;
     font-size: 1.1em;
-    transition: background-color 0.3s, transform 0.1s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:active {
-    transform: scale(0.98); /* 클릭 피드백 */
+    transform: scale(0.98);
 }
 
 /* 메인 화면 버튼 그룹 */
-.button-group button {
-    width: 45%; /* 두 버튼이 나란히 배치되도록 */
-    min-width: 150px;
+.button-group {
+    display: block;
+    margin: 0 auto;
 }
 
-#view-all-btn, #start-test-btn {
-    background-color: var(--color-primary);
+.button-group button {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* 💡 수정: 초기화면 버튼 색상 다르게 */
+#view-all-btn {
+    background-color: var(--color-primary-view);
+    color: var(--color-surface);
+}
+#start-test-btn {
+    background-color: var(--color-primary-test);
     color: var(--color-surface);
 }
 
-#view-all-btn:hover, #start-test-btn:hover {
-    background-color: #4A6ECA; /* 약간 어둡게 */
+#view-all-btn:hover {
+    background-color: #5B89D4; 
+}
+#start-test-btn:hover {
+    background-color: #406AAB;
 }
 
 .back-btn {
-    margin-top: 25px;
+    margin-top: 30px;
     background-color: var(--color-text-light);
     color: var(--color-surface);
     width: 90%;
@@ -127,46 +139,75 @@ button:active {
    4. 테스트 화면 스타일
    ========================================================================= */
 
+/* 높이 고정 컨테이너 (버튼 밀림 방지) */
+#test-word-container {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .word-display {
-    font-size: 3em; /* 단어 크기 확대 */
+    font-size: 3.5em;
     font-weight: 700;
-    margin: 30px 0 15px;
-    color: var(--color-primary);
-    word-break: break-word; /* 긴 단어 처리 */
+    margin: 20px 0 10px;
+    color: var(--color-text-dark);
 }
 
 .meaning-display {
-    font-size: 1.6em;
-    color: var(--color-success);
-    min-height: 2em;
-    font-weight: 400;
-    padding: 10px;
-    background-color: #E6F4EA; /* 부드러운 배경색 */
-    border-radius: 8px;
+    font-size: 1.8em;
+    /* color: var(--color-success); */
+    color: var(--color-text-dark);
+    min-height: 0; 
+    font-weight: 500;
+    padding: 15px;
+    background-color: #e6e6e6; 
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 90%;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* 테스트 피드백 버튼 (3개 나란히) */
+/* 테스트 버튼 그룹 (정답 확인/종료) */
 .button-group-test {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* 모바일에서 버튼이 많을 경우 줄 바꿈 */
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 15px;
 }
 
-.button-group-test button {
-    flex-grow: 1; /* 버튼이 공간을 채우도록 */
-    margin: 5px;
-    padding: 12px 10px;
-    font-size: 1em;
-}
-
+/* 💡 수정: 정답 확인 버튼 폭 넓게, radius 키움 */
 #show-answer-btn {
     background-color: var(--color-warning);
     color: var(--color-text-dark);
+    flex-grow: 4; /* 폭 넓게 */
+    max-width: 60%; 
 }
+
+/* 💡 수정: 시험 종료 버튼 폭 좁게, radius 키움 */
 #end-test-early-btn {
-    background-color: #FA8072; /* 산뜻한 주황/빨강 */
+    background-color: #FF6347; 
     color: var(--color-surface);
+    flex-grow: 1; /* 폭 좁게 */
+    max-width: 25%; 
+    margin-left: 10px;
+}
+
+/* 💡 수정: 맞춤/틀림 버튼 원형 및 크기 키우기 */
+#correct-btn, #incorrect-btn {
+    flex-grow: 0;
+    width: 100px; /* 고정 폭 */
+    height: 100px; /* 고정 높이 */
+    border-radius: 50%; /* 원형 */
+    padding: 0; /* 패딩 제거 */
+    font-size: 1.4em; /* 글꼴 크기 키움 */
+    display: flex; /* 내부 내용 중앙 정렬을 위해 */
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px 10px 30px;
 }
 #correct-btn {
     background-color: var(--color-success);
@@ -178,48 +219,37 @@ button:active {
 }
 
 /* =========================================================================
-   5. 테이블 및 결과 화면
+   5. 테이블 및 결과 화면 (이전과 동일)
    ========================================================================= */
 #word-table {
     width: 100%;
-    border-collapse: separate; /* border-spacing을 위해 */
-    border-spacing: 0 8px; /* 행 사이에 간격 */
-    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 25px;
+    font-size: 1em;
 }
 
 #word-table th {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary-test); /* 색상 통일 */
     color: var(--color-surface);
-    padding: 12px;
+    padding: 15px 12px;
     text-align: left;
     font-weight: 700;
 }
 
 #word-table td {
-    background-color: #F8F8F8;
+    background-color: var(--color-neutral-bg);
     border: none;
-    padding: 12px;
+    padding: 15px 12px;
     text-align: left;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
 }
 
 #score-display {
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 700;
-    color: var(--color-primary);
-    margin: 25px 0;
-    line-height: 1.5;
+    color: var(--color-primary-test);
+    margin: 30px 0;
+    line-height: 1.6;
 }
-
-.status-text {
-    margin-top: 15px;
-    color: #FFA000; /* 오렌지 */
-    font-weight: 400;
-}
-
-/* =========================================================================
-   6. 폰트 불러오기 (index.html <head>에 추가하는 것을 권장)
-   ========================================================================= */
-/*
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
-*/

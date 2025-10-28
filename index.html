@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📚 단어 암기 앱</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="main-screen" class="screen">
-        <h1>🗓️ 단어장 일자 선택</h1>
+        <h1>🗓️ 태윤 열공 단어장</h1>
         <div class="control-group">
-            <label for="date-select">단어장 날짜:</label>
+            <label for="date-select">단어장 시험 일자:</label>
             <select id="date-select"></select>
         </div>
         <div class="button-group">
-            <button id="view-all-btn">📖 전체 단어 보기</button>
+            <button id="view-all-btn">📖 단어 목록 보기</button>
             <button id="start-test-btn">📝 테스트 시작</button>
         </div>
         <p id="loading-status" class="status-text hidden">데이터 로딩 중...</p>
@@ -42,9 +41,9 @@
         
         <div class="button-group-test">
             <button id="show-answer-btn">❓ 정답 확인</button>
-            <button id="end-test-early-btn">🚫 시험 종료</button> 
-            <button id="correct-btn" class="hidden">✅ 맞춤</button>
-            <button id="incorrect-btn" class="hidden">❌ 틀림</button>
+            <button id="end-test-early-btn">🚫 종료</button> 
+            <button id="correct-btn" class="hidden">✅<br>맞춤</button>
+            <button id="incorrect-btn" class="hidden">❌<br>틀림</button>
         </div>
         <button id="end-test-btn" class="back-btn hidden">테스트 종료</button>
     </div>
