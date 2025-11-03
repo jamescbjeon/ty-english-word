@@ -253,3 +253,99 @@ button:active {
     margin: 30px 0;
     line-height: 1.6;
 }
+
+/* (중략 - 3. 버튼 및 컨트롤) */
+
+/* 💡 수정: 초기화면 버튼 색상 다르게 */
+#view-all-btn {
+    background-color: var(--color-primary-view);
+    color: var(--color-surface);
+}
+
+/* 2. 새로운 버튼 스타일 추가 */
+.practice-btn {
+    background-color: #507DD9; /* 기존 start-test-btn과 동일한 색상 */
+    color: var(--color-surface);
+}
+
+.mock-btn {
+    background-color: #4CAF50; /* 모의 테스트는 다른 색상으로 강조 */
+    color: var(--color-surface);
+}
+
+#view-all-btn:hover {
+    background-color: #5B89D4; 
+}
+
+.practice-btn:hover {
+    background-color: #406AAB;
+}
+
+.mock-btn:hover {
+    background-color: #388E3C;
+}
+/* (중략 - 4. 테스트 화면 스타일) */
+
+/* 5. 모의 테스트 화면 스타일 추가 */
+.mock-test-list {
+    text-align: left;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: var(--color-neutral-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.mock-test-list p {
+    margin: 8px 0;
+    line-height: 1.5;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #DDD;
+}
+
+.mock-test-list p:last-child {
+    border-bottom: none;
+}
+
+#mock-test-answer-container {
+    background-color: #FFF3E0; /* 정답은 다른 배경색으로 구분 */
+    border: 1px solid #FFCC80;
+}
+
+#mock-test-answer-container strong {
+    color: var(--color-primary-test);
+}
+
+/* (중략 - 3. 버튼 및 컨트롤) */
+
+/* 💡 수정: 초기화면 버튼 색상 다르게 */
+#view-all-btn {
+    background-color: var(--color-primary-view);
+    color: var(--color-surface);
+}
+
+/* 2. 새로운 버튼 스타일 추가 */
+.practice-btn {
+    background-color: #FFC107; /* 노란색 계열 */
+    color: #333; /* 노란색 배경에 잘 보이도록 글씨는 어둡게 */
+    font-weight: bold; /* 글씨를 더 잘 보이게 */
+}
+
+.mock-btn {
+    background-color: #4CAF50; /* 모의 테스트는 다른 색상으로 강조 */
+    color: var(--color-surface);
+}
+
+#view-all-btn:hover {
+    background-color: #5B89D4; 
+}
+
+.practice-btn:hover {
+    background-color: #FFA000; /* 호버 시 좀 더 진한 노란색 */
+}
+
+.mock-btn:hover {
+    background-color: #388E3C;
+}
+/* (중략 - 4. 테스트 화면 스타일) */

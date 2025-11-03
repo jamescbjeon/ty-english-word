@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📚 단어 암기 앱</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 <body>
 
     <div id="main-screen" class="screen">
         <h1>🗓️ 태윤 열공 단어장</h1>
         <div class="control-group">
-            <label for="date-select">단어장 시험 일자:</label>
-            <select id="date-select"></select>
+            <label for="date-select">단어장 선택:</label> <select id="date-select"></select>
         </div>
         <div class="button-group">
             <button id="view-all-btn">📖 단어 목록 보기</button>
-            <button id="start-test-btn">📝 테스트 시작</button>
+            <button id="start-word-practice-btn" class="practice-btn">📝 암기연습 (영어 단어)</button> 
+            <button id="start-meaning-practice-btn" class="practice-btn">💡 암기연습 (한국어 뜻)</button>
+            <button id="start-mock-test-btn" class="mock-btn">⏱️ 모의 테스트</button>
         </div>
         <p id="loading-status" class="status-text hidden">데이터 로딩 중...</p>
     </div>
 
     <div id="view-screen" class="screen hidden">
-        <h2>전체 단어 (날짜: <span id="view-date-display"></span>)</h2>
-        <table id="word-table">
+        <h2>전체 단어 (단어장: <span id="view-date-display"></span>)</h2> <table id="word-table">
             <thead>
                 <tr><th>영단어</th><th>뜻</th></tr>
             </thead>
@@ -32,12 +32,9 @@
         <button class="back-btn">⬅️ 뒤로가기</button>
     </div>
 
-    <div id="test-screen" class="screen hidden">
-        <h2 id="test-progress"></h2>
-        <div id="test-word-container">
-            <p id="current-word" class="word-display"></p>
-            <p id="current-meaning" class="meaning-display hidden"></p>
-        </div>
+    <div id="practice-screen" class="screen hidden">
+        <h2 id="practice-progress"></h2> <div id="practice-word-container">
+            <p id="current-display" class="word-display"></p> <p id="answer-display" class="meaning-display hidden"></p> </div>
         
         <div class="button-group-test">
             <button id="show-answer-btn">❓ 정답 확인</button>
@@ -46,6 +43,24 @@
             <button id="incorrect-btn" class="hidden">❌<br>틀림</button>
         </div>
         <button id="end-test-btn" class="back-btn hidden">테스트 종료</button>
+    </div>
+
+    <div id="mock-test-screen" class="screen hidden">
+        <h2>⏱️ 모의 테스트</h2>
+        <p id="mock-test-instruction" class="status-text"></p>
+        
+        <div id="mock-test-questions" class="mock-test-list">
+            </div>
+        
+        <div class="button-group">
+             <button id="mock-test-show-answer-btn" class="mock-btn">🔍 정답 확인</button>
+        </div>
+        
+        <h3>정답</h3>
+        <div id="mock-test-answer-container" class="mock-test-list hidden">
+            </div>
+
+        <button class="back-btn">⬅️ 뒤로가기</button>
     </div>
 
     <div id="result-screen" class="screen hidden">
