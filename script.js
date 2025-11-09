@@ -4,18 +4,17 @@
 
 const dateSelect = document.getElementById('date-select');
 const viewAllBtn = document.getElementById('view-all-btn');
-// 2. 버튼 ID 변경 및 추가
-const startWordPracticeBtn = document.getElementById('start-word-practice-btn'); // 암기연습 (영어 단어)
-const startMeaningPracticeBtn = document.getElementById('start-meaning-practice-btn'); // 암기연습 (한국어 뜻)
-const startMockTestBtn = document.getElementById('start-mock-test-btn'); // 모의 테스트
+const startWordPracticeBtn = document.getElementById('start-word-practice-btn'); 
+const startMeaningPracticeBtn = document.getElementById('start-meaning-practice-btn'); 
+const startMockTestBtn = document.getElementById('start-mock-test-btn'); 
 
 const loadingStatus = document.getElementById('loading-status');
 
 const screens = {
     main: document.getElementById('main-screen'),
     view: document.getElementById('view-screen'),
-    practice: document.getElementById('practice-screen'), // 테스트 -> 연습으로 이름 변경 (화면은 기존 test-screen 사용)
-    mockTest: document.getElementById('mock-test-screen'), // 모의 테스트 화면 추가
+    practice: document.getElementById('practice-screen'), 
+    mockTest: document.getElementById('mock-test-screen'), 
     result: document.getElementById('result-screen')
 };
 
@@ -24,19 +23,20 @@ let currentWords = [];
 let shuffledWords = [];
 let currentQuizIndex = 0;
 let correctCount = 0;
-let currentPracticeMode = 'word'; // 'word' (영어 단어) 또는 'meaning' (한국어 뜻)
+let incorrectWords = []; // 💡 추가: 틀린 단어를 저장할 배열
+let currentPracticeMode = 'word'; 
 
 // 연습/테스트 관련 DOM 요소
-// 기존 'test' 접두사 -> 'practice' 접두사로 통일
 const practiceProgress = document.getElementById('practice-progress');
-const currentDisplay = document.getElementById('current-display'); // 단어 또는 뜻을 표시
-const answerDisplay = document.getElementById('answer-display'); // 뜻 또는 단어를 표시
+const currentDisplay = document.getElementById('current-display'); 
+const answerDisplay = document.getElementById('answer-display'); 
 const showAnswerBtn = document.getElementById('show-answer-btn');
 const endTestEarlyBtn = document.getElementById('end-test-early-btn');
 const correctBtn = document.getElementById('correct-btn');
 const incorrectBtn = document.getElementById('incorrect-btn');
 const endTestBtn = document.getElementById('end-test-btn');
 const scoreDisplay = document.getElementById('score-display');
+const incorrectListContainer = document.getElementById('incorrect-list-container'); // 💡 추가: 틀린 단어 컨테이너
 
 // 모의 테스트 관련 DOM 요소
 const mockTestInstruction = document.getElementById('mock-test-instruction');
@@ -70,7 +70,6 @@ function parseCSV(csvText) {
 
 async function fetchWords(dateKey) {
     loadingStatus.classList.remove('hidden');
-    // 1. 파일 경로 수정: dateKey(임의 텍스트)를 파일명으로 사용
     const filePath = `words/${dateKey}.csv`; 
     
     try {
@@ -95,11 +94,11 @@ async function fetchWords(dateKey) {
 
 
 // =========================================================================
-// 3. 초기화 및 유틸리티 함수
+// 3. 초기화 및 유틸리티 함수 (이전과 동일)
 // =========================================================================
 
 async function initializeApp() {
-    let keys = []; // 날짜 대신 임의 텍스트 키
+    let keys = []; 
     loadingStatus.textContent = '단어장 목록 로딩 중...';
     loadingStatus.classList.remove('hidden');
 
@@ -123,7 +122,6 @@ async function initializeApp() {
         loadingStatus.textContent = '데이터 로딩 중...';
     }
     
-    // 1. 정렬 로직은 유지하거나 필요에 따라 수정 (여기서는 그냥 문자열 정렬)
     keys.sort((a, b) => b.localeCompare(a)); 
 
     dateSelect.innerHTML = ''; 
@@ -133,7 +131,7 @@ async function initializeApp() {
         keys.forEach(key => {
             const option = document.createElement('option');
             option.value = key;
-            option.textContent = key; // 1. 화면에 임의의 텍스트 키 표시
+            option.textContent = key; 
             dateSelect.appendChild(option);
         });
     }
@@ -162,7 +160,6 @@ function showScreen(screenName) {
 
 function setupEventListeners() {
     viewAllBtn.addEventListener('click', handleViewAll);
-    // 2. 새로운 버튼에 이벤트 연결
     startWordPracticeBtn.addEventListener('click', () => handleStartPractice('word'));
     startMeaningPracticeBtn.addEventListener('click', () => handleStartPractice('meaning'));
     startMockTestBtn.addEventListener('click', handleStartMockTest);
@@ -178,10 +175,10 @@ function setupEventListeners() {
     
     endTestEarlyBtn.addEventListener('click', handleEndTestEarly);
     
-    // 5. 모의 테스트 정답 확인 버튼
     mockTestShowAnswerBtn.addEventListener('click', handleMockTestShowAnswer);
 }
 
+// (handleEndTestEarly, handleViewAll, handleStartMockTest, displayQuiz, handleShowAnswer, handleMockTestShowAnswer 함수는 변경 없음)
 function handleEndTestEarly() {
     const confirmEnd = confirm("테스트를 정말로 종료하시겠습니까?\n종료하면 현재까지 시도한 문제의 결과로 점수가 매겨집니다.");
 
@@ -213,7 +210,6 @@ async function handleViewAll() {
     showScreen('view');
 }
 
-// 3, 4. 암기 연습 시작 (단어 -> 뜻, 뜻 -> 단어 모두 처리)
 async function handleStartPractice(mode) {
     const selectedKey = dateSelect.value;
     
@@ -223,16 +219,16 @@ async function handleStartPractice(mode) {
         return;
     }
 
-    currentPracticeMode = mode; // 모드 저장
+    currentPracticeMode = mode; 
     shuffledWords = shuffleArray([...currentWords]); 
     currentQuizIndex = 0;
     correctCount = 0;
+    incorrectWords = []; // 💡 초기화
 
     showScreen('practice');
     displayQuiz();
 }
 
-// 5. 모의 테스트 시작
 async function handleStartMockTest() {
     const selectedKey = dateSelect.value;
     
@@ -242,17 +238,13 @@ async function handleStartMockTest() {
         return;
     }
     
-    // 모의 테스트는 순서가 중요하지 않으므로, 원래 배열을 복사하여 사용하거나 (여기서는 편의상)
-    // 전체 단어를 사용하여 문제를 만듭니다. 순서를 임의로 섞는 것이 더 좋습니다.
     shuffledWords = shuffleArray([...currentWords]); 
 
-    // 문제 표시
     mockTestInstruction.textContent = `${shuffledWords.length}개의 한국어 뜻을 보고 영어 단어를 적어보세요.`;
     mockTestQuestions.innerHTML = shuffledWords.map((item, index) => {
         return `<p><strong>${index + 1}.</strong> ${item.meaning}</p>`;
     }).join('');
     
-    // 정답 관련 요소 초기화
     mockTestAnswerContainer.innerHTML = '';
     mockTestAnswerContainer.classList.add('hidden');
     mockTestShowAnswerBtn.classList.remove('hidden');
@@ -267,11 +259,9 @@ function displayQuiz() {
         practiceProgress.textContent = `문제 ${currentQuizIndex + 1} / ${shuffledWords.length}`;
         
         if (currentPracticeMode === 'word') {
-            // 3. 암기연습 (영어 단어): 영단어 제시, 뜻 숨김
             currentDisplay.textContent = currentWordData.word;
             answerDisplay.textContent = ''; 
         } else {
-            // 4. 암기연습 (한국어 뜻): 한국어 뜻 제시, 단어 숨김
             currentDisplay.textContent = currentWordData.meaning;
             answerDisplay.textContent = '';
         }
@@ -288,17 +278,12 @@ function displayQuiz() {
     }
 }
 
-/**
- * 정답 확인 시 '시험 종료' 버튼을 숨깁니다.
- */
 function handleShowAnswer() {
     const currentWordData = shuffledWords[currentQuizIndex];
     
     if (currentPracticeMode === 'word') {
-        // 3. 암기연습 (영어 단어): 정답으로 뜻 표시
         answerDisplay.textContent = currentWordData.meaning;
     } else {
-        // 4. 암기연습 (한국어 뜻): 정답으로 단어 표시
         answerDisplay.textContent = currentWordData.word;
     }
     
@@ -310,12 +295,10 @@ function handleShowAnswer() {
     incorrectBtn.classList.remove('hidden');
 }
 
-// 5. 모의 테스트 정답 확인 로직
 function handleMockTestShowAnswer() {
     mockTestShowAnswerBtn.classList.add('hidden');
     
     mockTestAnswerContainer.innerHTML = shuffledWords.map((item, index) => {
-        // 제공된 순서에 맞게 한국어 뜻과 영어 단어 답안을 제공
         return `<p><strong>${index + 1}.</strong> ${item.meaning} &rarr; <strong>${item.word}</strong></p>`;
     }).join('');
     
@@ -325,8 +308,12 @@ function handleMockTestShowAnswer() {
 
 
 function handleQuizFeedback(isCorrect) {
+    const currentWordData = shuffledWords[currentQuizIndex]; // 💡 현재 단어 데이터 가져오기
+
     if (isCorrect) {
         correctCount++;
+    } else {
+        incorrectWords.push(currentWordData); // 💡 틀린 경우 목록에 추가
     }
 
     currentQuizIndex++;
@@ -355,6 +342,21 @@ function handleShowResult() {
     }
     
     scoreDisplay.innerHTML = scoreMessage;
+    
+    // 💡 틀린 단어 목록 생성 및 표시
+    if (incorrectWords.length > 0) {
+        let listHTML = '<h3>❌ 틀린 단어 복습</h3><table id="incorrect-word-table"><thead><tr><th>영단어</th><th>뜻</th></tr></thead><tbody>';
+        incorrectWords.forEach(item => {
+            listHTML += `<tr><td>${item.word}</td><td>${item.meaning}</td></tr>`;
+        });
+        listHTML += '</tbody></table>';
+        incorrectListContainer.innerHTML = listHTML;
+    } else {
+        incorrectListContainer.innerHTML = '<h3>✅ 모두 맞췄습니다!</h3><p>훌륭합니다! 틀린 단어가 없습니다.</p>';
+    }
+
+    incorrectListContainer.classList.remove('hidden');
+
     showScreen('result');
 }
 

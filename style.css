@@ -349,3 +349,52 @@ button:active {
     background-color: #388E3C;
 }
 /* (중략 - 4. 테스트 화면 스타일) */
+
+/* (중략) */
+
+/* =========================================================================
+   5. 테이블 및 결과 화면 (틀린 단어 목록 스타일 추가)
+   ========================================================================= */
+
+/* (기존 #word-table 스타일 생략) */
+
+/* 💡 추가: 틀린 단어 목록 컨테이너 스타일 */
+#incorrect-list-container {
+    margin-top: 35px; /* 점수 표시와 구분 */
+    text-align: left;
+}
+
+#incorrect-word-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+#incorrect-word-table th {
+    background-color: var(--color-danger); /* 빨간색 계열 */
+    color: var(--color-surface);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+}
+
+#incorrect-word-table td {
+    background-color: #ffe8e8; /* 옅은 빨간색 배경 */
+    border: none;
+    padding: 10px 12px;
+    text-align: left;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+#score-display {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--color-primary-test);
+    margin: 30px 0;
+    line-height: 1.6;
+}
+
+/* (하단 mock-test-list 스타일 생략) */
