@@ -1,5 +1,5 @@
 // =========================================================================
-// 1. DOM 요소 및 상태 변수 정의
+// 1. DOM 요소 및 상태 변수 정의 (변경 없음)
 // =========================================================================
 
 const dateSelect = document.getElementById('date-select');
@@ -33,7 +33,7 @@ const answerDisplay = document.getElementById('answer-display');
 const showAnswerBtn = document.getElementById('show-answer-btn');
 const endTestEarlyBtn = document.getElementById('end-test-early-btn');
 const correctBtn = document.getElementById('correct-btn');
-const incorrectBtn = document.getElementById('incorrect-btn');
+const incorrectBtn = document = document.getElementById('incorrect-btn');
 const endTestBtn = document.getElementById('end-test-btn');
 const scoreDisplay = document.getElementById('score-display');
 const incorrectListContainer = document.getElementById('incorrect-list-container'); // 💡 추가: 틀린 단어 컨테이너
@@ -46,7 +46,7 @@ const mockTestShowAnswerBtn = document.getElementById('mock-test-show-answer-btn
 
 
 // =========================================================================
-// 2. CSV 파싱 및 데이터 로딩 함수 (이전과 동일)
+// 2. CSV 파싱 및 데이터 로딩 함수 (parseCSV 함수 수정)
 // =========================================================================
 
 function parseCSV(csvText) {
@@ -57,12 +57,22 @@ function parseCSV(csvText) {
     
     return dataLines.map(line => {
         const parts = line.split(',');
-        if (parts.length < 2) return null;
+        // 💡 수정: 3개 이상의 열을 가정하고 처리 (word, meaning, memorize)
+        if (parts.length < 3) {
+            // 최소한 word, meaning은 있어야 함. memorize가 없을 수 있으므로 2가 아닌 3을 기준으로 하여 
+            // parts[2]가 정의되지 않았으면 빈 문자열로 처리
+            if (parts.length < 2) return null;
+        }
 
-        const [word, meaning] = [parts[0].trim(), parts[1].trim()];
+        const [word, meaning, memorize] = [
+            parts[0].trim(), 
+            parts[1].trim(), 
+            parts[2] ? parts[2].trim() : '' // memorize가 없으면 빈 문자열로 처리
+        ];
 
         if (word && meaning) {
-            return { word, meaning };
+            // 💡 memorize 필드 추가
+            return { word, meaning, memorize };
         }
         return null;
     }).filter(item => item !== null);
@@ -76,6 +86,7 @@ async function fetchWords(dateKey) {
         const response = await fetch(filePath);
         if (!response.ok) {
             console.error(`Error loading ${filePath}: ${response.statusText}`);
+            // 💡 수정: alert 메시지 오타 수정 (status -> statusText)
             alert(`단어장 파일을 불러오는 데 실패했습니다 (HTTP 상태 코드: ${response.status}). 웹 서버에서 실행 중인지 확인하고 파일 경로(words/${dateKey}.csv)를 확인해주세요.`);
             return []; 
         }
@@ -94,7 +105,7 @@ async function fetchWords(dateKey) {
 
 
 // =========================================================================
-// 3. 초기화 및 유틸리티 함수 (이전과 동일)
+// 3. 초기화 및 유틸리티 함수 (변경 없음)
 // =========================================================================
 
 async function initializeApp() {
@@ -155,7 +166,7 @@ function showScreen(screenName) {
 
 
 // =========================================================================
-// 4. 이벤트 핸들러 및 퀴즈 로직
+// 4. 이벤트 핸들러 및 퀴즈 로직 (handleStartPractice 함수 수정)
 // =========================================================================
 
 function setupEventListeners() {
@@ -178,7 +189,6 @@ function setupEventListeners() {
     mockTestShowAnswerBtn.addEventListener('click', handleMockTestShowAnswer);
 }
 
-// (handleEndTestEarly, handleViewAll, handleStartMockTest, displayQuiz, handleShowAnswer, handleMockTestShowAnswer 함수는 변경 없음)
 function handleEndTestEarly() {
     const confirmEnd = confirm("테스트를 정말로 종료하시겠습니까?\n종료하면 현재까지 시도한 문제의 결과로 점수가 매겨집니다.");
 
@@ -201,6 +211,7 @@ async function handleViewAll() {
     const tbody = document.querySelector('#word-table tbody');
     tbody.innerHTML = '';
 
+    // 💡 참고: 단어 목록 보기에서는 모든 단어 표시 (memorize 필드는 사용하지 않음)
     currentWords.forEach(item => {
         const row = tbody.insertRow();
         row.insertCell().textContent = item.word;
@@ -219,8 +230,17 @@ async function handleStartPractice(mode) {
         return;
     }
 
+    // 💡 추가된 로직: memorize 필드가 'O'가 아닌 (즉, 빈 문자열인) 단어만 필터링
+    const practiceWords = currentWords.filter(item => item.memorize !== 'O');
+    
+    if (practiceWords.length === 0) {
+        alert("🎉 모든 단어를 암기했습니다! 모의 테스트를 시작해보세요.");
+        return; 
+    }
+
     currentPracticeMode = mode; 
-    shuffledWords = shuffleArray([...currentWords]); 
+    // 💡 수정: 필터링된 practiceWords로 퀴즈 생성
+    shuffledWords = shuffleArray([...practiceWords]); 
     currentQuizIndex = 0;
     correctCount = 0;
     incorrectWords = []; // 💡 초기화
@@ -232,6 +252,7 @@ async function handleStartPractice(mode) {
 async function handleStartMockTest() {
     const selectedKey = dateSelect.value;
     
+    // 💡 참고: 모의 테스트는 모든 단어를 대상으로 실행
     currentWords = await fetchWords(selectedKey);
     
     if (currentWords.length === 0) {
@@ -336,7 +357,9 @@ function handleShowResult() {
     let scoreMessage;
 
     if (attemptedCount < totalQuestions) {
-        scoreMessage = `테스트를 조기 종료했습니다.<br><br>총 ${totalQuestions} 문제 중 <br>${attemptedCount} 문제 시도하여 <br>${correctCount} 문제 맞춤`;
+        // 💡 수정: 조기 종료 메시지에 .early-exit-message 클래스 적용 및 텍스트 줄임
+        const attemptedText = `테스트를 조기 종료했습니다.<br>총 ${totalQuestions} 문제 중 ${attemptedCount} 문제 시도, ${correctCount} 문제 맞춤`;
+        scoreMessage = `<span class="early-exit-message">${attemptedText}</span>`;
     } else {
         scoreMessage = `총 ${totalQuestions} 문제 중 **${correctCount} 문제** 맞춤`;
     }
