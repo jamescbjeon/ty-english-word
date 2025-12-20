@@ -190,11 +190,12 @@ function setupEventListeners() {
 }
 
 function handleEndTestEarly() {
-    const confirmEnd = confirm("테스트를 정말로 종료하시겠습니까?\n종료하면 현재까지 시도한 문제의 결과로 점수가 매겨집니다.");
+    // const confirmEnd = confirm("테스트를 정말로 종료하시겠습니까?\n종료하면 현재까지 시도한 문제의 결과로 점수가 매겨집니다.");
 
-    if (confirmEnd) {
+    // if (confirmEnd) {
         handleShowResult(); 
-    }
+    // }
+
 }
 
 async function handleViewAll() {
@@ -324,7 +325,7 @@ function handleMockTestShowAnswer() {
     }).join('');
     
     mockTestAnswerContainer.classList.remove('hidden');
-    alert("정답이 공개되었습니다! 스스로 채점해보세요.");
+    // alert("정답이 공개되었습니다! 스스로 채점해보세요.");
 }
 
 
