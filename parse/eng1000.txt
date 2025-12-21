@@ -1,0 +1,1169 @@
+Lesson Rank English Korean
+L1
+1 all 모두
+L1
+2 and
+과
+L1
+3 boy 소년
+L1
+4 car
+차
+L1
+5 cat 고양이
+L1
+6 day
+일
+L1
+7 end 종료
+L1
+8 family 가족
+L1
+9 home
+집
+L1 10 it 그것
+L1 11 man 남자
+L1 12 name 이름
+L1 13 one 하나
+L1 14 people 사람들
+L1 15 read 읽다
+L1 16 school 학교
+L1 17 speak 말하다
+L1 18 the the
+L1 19 this
+이
+L1 20 you 당신
+L2 21 ask 물어보기
+L2 22 book
+책
+L2 23 can
+할 수있다
+L2 24 dog
+개
+L2 25 eye
+눈
+L2 26 first 먼저
+L2 27 go 가다
+L2 28 he
+그
+L2 29 child 아이
+L2 30 in
+에
+L2 31 learn 배우다
+L2 32 morning 아침
+L2 33 open 열다
+L2 34 play 플레이
+L2 35 question 질문
+L2 36 room
+방
+L2 37 say 말하다
+L2 38 start 스타트
+L2 39 today 오늘
+L2 40 word 워드
+L3 41 about
+약
+L3 42 at 에서
+L3 43 brother 동료
+L3 44 drink 음주
+L3 45 easy 쉬운
+L3 46 father 아버지
+L3 47 girl 소녀
+L3 48 help 도움
+L3 49 chair 의자
+L3 50 know 알고있다
+1000englishwords.com / 1
+L3 51 my 나의
+L3 52 new 새로운
+L3 53 paper 종이
+L3 54 please 부디
+L3 55 rich 풍부한
+L3 56 she 여자
+L3 57 show 보여 주다
+L3 58 son 아들
+L3 59 they 그들
+L3 60 what
+뭐
+L4 61 always 항상
+L4 62 be 있다
+L4 63 body
+몸
+L4 64 careful 꼼꼼한
+L4 65 cry 울음 소리
+L4 66 door
+문
+L4 67 everything 모두
+L4 68 face 얼굴
+L4 69 her 그녀
+L4 70 if 만약
+L4 71 many 많은
+L4 72 no 아니
+L4 73 pen
+펜
+L4 74 place 장소
+L4 75 road 도로
+L4 76 stop 중지
+L4 77 student 학생
+L4 78 two
+두
+L4 79 want 필요
+L4 80 where 어디
+L5 81 answer 대답
+L5 82 between 중에서
+L5 83 clear 맑은
+L5 84 country 국가
+L5 85 dance 댄스
+L5 86 do 하다
+L5 87 each 마다
+L5 88 friend 친구
+L5 89 his 그의
+L5 90 job
+일
+L5 91 life 생명
+L5 92 more
+더
+L5 93 park 공원
+L5 94 person 사람
+L5 95 ready 준비된
+L5 96 second 둘째
+L5 97 soon
+곧
+L5 98 that
+그
+L5 99 we 우리
+L5 100 why
+왜
+1000englishwords.com / 2
+L6 101 able
+할
+수 있는
+L6 102 before 전에
+L6 103 but 그러나
+L6 104 clean 깨끗한
+L6 105 close 닫기
+L6 106 dream
+꿈
+L6 107 eight 여덟
+L6 108 for
+에 대한
+L6 109 hand
+손
+L6 110 inside 내부
+L6 111 now 지금
+L6 112 or 또는
+L6 113 picture 그림
+L6 114 river
+강
+L6 115 ship
+배
+L6 116 shop 가게
+L6 117 sit 앉다
+L6 118 table
+표
+L6 119 very 대단히
+L6 120 write 쓰다
+L7 121 air 공기
+L7 122 black 검정
+L7 123 cinema 영화
+L7 124 daughter
+딸
+L7 125 eat 먹다
+L7 126 from 에서
+L7 127 good 좋은
+L7 128 head 머리
+L7 129 cheese 치즈
+L7 130 important 중대한
+L7 131 land 나라
+L7 132 money
+돈
+L7 133 pay 지불
+L7 134 problem 문제
+L7 135 run 운영
+L7 136 same 같은
+L7 137 see 보다
+L7 138 send 보내다
+L7 139 thing 맡은
+일
+L7 140 work 작업
+L8 141 any 어떤
+L8 142 as 같이
+L8 143 better 보다 나은
+L8 144 cold 춥다
+L8 145 come 왔다
+L8 146 doctor 박사님
+L8 147 find 찾기
+L8 148 game 경기
+L8 149 idea 생각
+L8 150 kind 종류
+1000englishwords.com / 3
+L8 151 live (v) 라이브
+L8 152 make 하다
+L8 153 peace 평화
+L8 154 popular 인기 있는
+L8 155 right 권리
+L8 156 small 작은
+L8 157 so 그래서
+L8 158 some 약간
+L8 159 there 그곳에
+L8 160 wait 기다림
+L9 161 again 다시
+L9 162 back
+뒤
+L9 163 could
+할
+수 있었다
+L9 164 document 문서
+L9 165 egg 계란
+L9 166 fire
+불
+L9 167 give 주기
+L9 168 chance 기회
+L9 169 information 정보
+L9 170 light
+빛
+L9 171 may
+할 수있다
+L9 172 often 자주
+L9 173 prefer 취하다
+L9 174 put 놓다
+L9 175 red 빨간
+L9 176 stone 결석
+L9 177 such 이러한
+L9 178 think 생각한다
+L9 179 understand 이해하다
+L9 180 visit 방문
+L10 181 around 주위에
+L10 182 best 베스트
+L10 183 call 요구
+L10 184 cut 절단
+L10 185 dinner 공식 만찬
+L10 186 down 하위
+L10 187 explain 설명
+L10 188 get 가져 오기
+L10 189 interesting 흥미로운
+L10 190 long
+긴
+L10 191 move 움직임
+L10 192 out
+밖
+L10 193 page 페이지
+L10 194 reach 범위
+L10 195 rest 쉬다
+L10 196 set 세트
+L10 197 should 할까요
+L10 198 stand
+대
+L10 199 time 시각
+L10 200 up 쪽으로
+1000englishwords.com / 4
+L11 201 age 나이
+L11 202 because 때문에
+L11 203 big
+큰
+L11 204 camera 카메라
+L11 205 city 시티
+L11 206 dress 드레스
+L11 207 evening 저녁
+L11 208 free 비어 있는
+L11 209 have 있다
+L11 210 ill
+악
+L11 211 like 처럼
+L11 212 mother 어머니
+L11 213 old 낡은
+L11 214 police 경찰
+L11 215 remember 생각해 내다
+L11 216 street 거리
+L11 217 study 연구
+L11 218 teacher 선생님
+L11 219 voice 목소리
+L11 220 water
+물
+L12 221 also 또한
+L12 222 box 상자
+L12 223 class 수업
+L12 224 difficult 어려운
+L12 225 drive 드라이브
+L12 226 food 음식
+L12 227 great
+큰
+L12 228 happy 행복
+L12 229 change 변화
+L12 230 juice 주스
+L12 231 meet 만나다
+L12 232 need 필요한
+것
+L12 233 pretty 예쁜
+L12 234 quite 아주
+L12 235 real 레알
+L12 236 sad 슬퍼
+L12 237 spring
+봄
+L12 238 star
+별
+L12 239 take 취하다
+L12 240 yes
+예
+L13 241 action 동작
+L13 242 alone 혼자
+L13 243 breakfast 아침밥
+L13 244 continue 계속하다
+L13 245 dead 죽은
+L13 246 enjoy 즐겨
+L13 247 full 완전한
+L13 248 garden 정원
+L13 249 house
+집
+L13 250 journey 여행
+1000englishwords.com / 5
+L13 251 much 많은
+L13 252 nothing 아무것도
+L13 253 phone 전화
+L13 254 price 가격
+L13 255 result 결과
+L13 256 sister 여자 형제
+L13 257 sun 태양
+L13 258 tell
+텔
+L13 259 view 전망
+L13 260 with
+와
+L14 261 against
+에 맞서
+L14 262 bus 버스
+L14 263 company 회사
+L14 264 desert (n) 사막
+L14 265 expensive 비싼
+L14 266 flower
+꽃
+L14 267 green 초록
+L14 268 church 교회에
+L14 269 impossible 불가능한
+L14 270 leave 떠나다
+L14 271 month
+달
+L14 272 on
+의 위에
+L14 273 plan 계획
+L14 274 possible 가능한
+L14 275 return 반환
+L14 276 save 저장
+L14 277 sea 바다
+L14 278 something 어떤
+것
+L14 279 together 함께
+L14 280 woman 여자
+L15 281 anything 아무것도
+L15 282 army 육군
+L15 283 bad 나쁜
+L15 284 cover 덮개
+L15 285 culture 문화
+L15 286 decision 결정
+L15 287 example
+예
+L15 288 feel 느낌
+L15 289 how 어떻게
+L15 290 island
+섬
+L15 291 member 회원
+L15 292 next 다음
+L15 293 position 위치
+L15 294 present (adj) 선물
+L15 295 record (n) 기록
+L15 296 sleep 자다
+L15 297 sweet
+단
+L15 298 try 시험
+L15 299 under 아래에
+L15 300 world 세계
+1000englishwords.com / 6
+L16 301 after
+후
+L16 302 bed 침대
+L16 303 buy 구입
+L16 304 catch 잡기
+L16 305 corner 모서리
+L16 306 distance 거리
+L16 307 education 교육
+L16 308 fast 빠른
+L16 309 here 여기
+L16 310 interest 관심
+L16 311 letter 편지
+L16 312 never
+못
+L16 313 part 부품
+L16 314 president 대통령
+L16 315 round 일주
+L16 316 several 몇몇의
+L16 317 sound 소리
+L16 318 story 이야기
+L16 319 talk 이야기
+L16 320 week
+주
+L17 321 almost 거의
+L17 322 bread
+빵
+L17 323 control 제어
+L17 324 dear 소중한
+L17 325 every 마다
+L17 326 few 조금
+L17 327 gold
+금
+L17 328 chief 주요한
+L17 329 invite 초대
+L17 330 late 늦은
+L17 331 most 대부분
+L17 332 only
+뿐
+L17 333 product 생성물
+L17 334 public 공공의
+L17 335 receive 받다
+L17 336 sorry 죄송합니다
+L17 337 strong 강한
+L17 338 then 그때
+L17 339 too 너무
+L17 340 way 방법
+L18 341 across 건너서
+L18 342 art 미술
+L18 343 bring 가져오다
+L18 344 carry 나르다
+L18 345 confirm 확인
+L18 346 die 주사위
+L18 347 east 동쪽
+L18 348 group 그룹
+L18 349 hope 기대
+L18 350 industry 산업
+1000englishwords.com / 7
+L18 351 look 보기
+L18 352 must 절대로 필요한
+것
+L18 353 own 개인적인
+L18 354 personal 개인적인
+L18 355 reason 이유
+L18 356 service 서비스
+L18 357 shall 하여야 한다
+L18 358 stay 머무르다
+L18 359 their 그들의
+L18 360 wife 아내
+L19 361 away 떨어져
+L19 362 beautiful 아름다운
+L19 363 care 케어
+L19 364 cost 비용
+L19 365 deep 깊은
+L19 366 enough 충분히
+L19 367 fight 싸움
+L19 368 garage 차고
+L19 369 into 으로
+L19 370 keep 유지
+L19 371 miss 미스
+L19 372 other 다른
+L19 373 player 플레이어
+L19 374 rather 차라리
+L19 375 remain 남아있다
+L19 376 side 측면
+L19 377 south 남쪽
+L19 378 true 진실
+L19 379 use 사용하다
+L19 380 who 누구
+L20 381 already 이미
+L20 382 become 지다
+L20 383 cause 원인
+L20 384 certain 어떤
+L20 385 describe 설명
+L20 386 dry 마른
+L20 387 expect 배고 있다
+L20 388 fact
+것
+L20 389 hard 단단한
+L20 390 include 포함
+L20 391 let 허락하다
+L20 392 moment 순간
+L20 393 power
+힘
+L20 394 provide 제공하다
+L20 395 report 보고서
+L20 396 seat 좌석
+L20 397 single 단일
+L20 398 system 체계
+L20 399 through
+을 통하여
+L20 400 which 어느
+1000englishwords.com / 8
+L21 401 apple 사과
+L21 402 blue 푸른
+L21 403 clock 시계
+L21 404 colour 색깔
+L21 405 different 다른
+L21 406 earth 지구
+L21 407 film 필름
+L21 408 glad 기쁜
+L21 409 hour
+시
+L21 410 just 다만
+L21 411 love 사랑
+L21 412 number 번호
+L21 413 pencil 연필
+L21 414 quick 빨리
+L21 415 rain
+비
+L21 416 simple 단순한
+L21 417 summer 여름
+L21 418 town 도시
+L21 419 tree 나무
+L21 420 window 창문
+L22 421 address 주소
+L22 422 building 건물
+L22 423 computer 컴퓨터
+L22 424 cross 가로 질러 가다
+L22 425 desk 책상
+L22 426 ear
+귀
+L22 427 fish 물고기
+L22 428 glass 유리
+L22 429 ice
+빙
+L22 430 key
+키
+L22 431 minute (n)
+분
+L22 432 office 사무실
+L22 433 parent 부모의
+L22 434 post 우편
+L22 435 rock
+록
+L22 436 search 검색
+L22 437 sport 스포츠
+L22 438 tea
+차
+L22 439 valley 골짜기
+L22 440 walk 산책
+L23 441 airport 공항
+L23 442 baby 아가
+L23 443 card 카드
+L23 444 central 본부
+L23 445 direction 방향
+L23 446 dollar 달러
+L23 447 fruit 과일
+L23 448 gift 선물
+L23 449 high 높은
+L23 450 illness 질병
+1000englishwords.com / 9
+L23 451 milk 우유
+L23 452 not 아니
+L23 453 piece 조각
+L23 454 protect 보호
+L23 455 race 경주
+L23 456 since 이후
+L23 457 slow 느린
+L23 458 smile 미소
+L23 459 ticket 티켓
+L23 460 well
+잘
+L24 461 accident 사고
+L24 462 blood 피의
+L24 463 business 사업
+L24 464 during 동안
+L24 465 even 조차
+L24 466 floor 바닥
+L24 467 general 일반
+L24 468 choose 고르다
+L24 469 inform 알리다
+L24 470 little 작은
+L24 471 meeting 모임
+L24 472 order 주문
+L24 473 party 파티
+L24 474 pink 분홍
+L24 475 reply 댓글
+L24 476 snow
+눈
+L24 477 sugar 설탕
+L24 478 travel 여행
+L24 479 virus 바이러스
+L24 480 watch 손목 시계
+L25 481 another 다른
+L25 482 believe 믿다
+L25 483 both 양자 모두
+L25 484 crazy 미친
+L25 485 cup
+컵
+L25 486 decide 결정하다
+L25 487 ever 이제까지
+L25 488 field
+들
+L25 489 heart 심장
+L25 490 imagine 상상하다
+L25 491 line
+선
+L25 492 meat 고기
+L25 493 over 위에
+L25 494 pull 손잡이
+L25 495 ring 반지
+L25 496 sell 팔다
+L25 497 similar 비슷한
+L25 498 speed 속도
+L25 499 than 보다
+L25 500 your 너의
+1000englishwords.com / 10
+L26 501 above
+위
+L26 502 begin 시작하다
+L26 503 century 세기
+L26 504 consider 중히 여기다
+L26 505 dangerous 위험한
+L26 506 dark 어두운
+L26 507 exchange 교환
+L26 508 government 정부
+L26 509 hear 듣다
+L26 510 jump 도약
+L26 511 material 재료
+L26 512 near 근처에
+L26 513 past 과거
+L26 514 produce 생기게 하다
+L26 515 remove 없애다
+L26 516 secret 비밀
+L26 517 song 노래
+L26 518 television 텔레비전
+L26 519 value
+값
+L26 520 when 언제
+L27 521 arm
+팔
+L27 522 behind 뒤에
+L27 523 case 케이스
+L27 524 collect 수집
+L27 525 draw 무승부
+L27 526 examine 조사하다
+L27 527 fall 가을
+L27 528 grow 자라다
+L27 529 immediately 바로
+L27 530 low 낮은
+L27 531 mind 마음
+L27 532 off 떨어져서
+L27 533 pass 통과하다
+L27 534 radio 라디오
+L27 535 shoe 구두
+L27 536 station
+역
+L27 537 sure 확실한
+L27 538 test 테스트
+L27 539 usual 보통의
+L27 540 while 동안
+L28 541 ago 전에
+L28 542 along
+을 따라서
+L28 543 bear
+곰
+L28 544 condition 질환
+L28 545 direct 곧장
+L28 546 edge 가장자리
+L28 547 fine 좋아
+L28 548 half 절반
+L28 549 chicken 치킨
+L28 550 increase 증가하다
+1000englishwords.com / 11
+L28 551 magazine 매거진
+L28 552 nature 자연
+L28 553 plate 플레이트
+L28 554 poor 가난한
+L28 555 respect 존경
+L28 556 sharp 날카로운
+L28 557 sometimes 때때로
+L28 558 still 아직도
+L28 559 tall
+긴
+L28 560 would
+할 것이다
+L29 561 add 더하다
+L29 562 among
+의 사이에
+L29 563 built 세워짐
+L29 564 common 흔한
+L29 565 depend 의존하다
+L29 566 early 이른
+L29 567 fly 파리
+L29 568 happen 우연히 있다
+L29 569 check 검사
+L29 570 introduce 설명하다
+L29 571 less 적게
+L29 572 mark
+표
+L29 573 patient 환자
+L29 574 perhaps 혹시
+L29 575 rise 오르기
+L29 576 sense 감각
+L29 577 short 짧은
+L29 578 state 상태
+L29 579 turn 회전
+L29 580 will 의지
+L30 581 act 행위
+L30 582 appear 나타나다
+L30 583 break 단절
+L30 584 course 강좌
+L30 585 court 법정
+L30 586 discuss 논의하다
+L30 587 effect 효과
+L30 588 form 형태
+L30 589 hold 보류
+L30 590 insect 곤충
+L30 591 mean 평균
+L30 592 once 한번
+L30 593 purpose 목적
+L30 594 really 정말
+L30 595 ride 타기
+L30 596 situation 상태
+L30 597 success 성공
+L30 598 though 그러나
+L30 599 upon
+에
+L30 600 war 전쟁
+1000englishwords.com / 12
+L31 601 afternoon 대낮
+L31 602 busy 바쁜
+L31 603 coffee 커피
+L31 604 detail 세부 묘사
+L31 605 especially 특히
+L31 606 finish
+끝
+L31 607 ground 바닥
+L31 608 holiday 휴일
+L31 609 choice 선택
+L31 610 kitchen 부엌
+L31 611 lesson 교훈
+L31 612 music 음악
+L31 613 orange 주황색
+L31 614 perfect (adj) 완전한
+L31 615 request 의뢰
+L31 616 season 시즌
+L31 617 sick 병든
+L31 618 tomorrow 내일
+L31 619 welcome 어서 오십시오
+L31 620 yesterday 어제
+L32 621 agree 동의하다
+L32 622 bridge 다리
+L32 623 cake 케이크
+L32 624 customer 고객
+L32 625 date 데이트
+L32 626 enter 시작하다
+L32 627 future 미래
+L32 628 gentleman 신사
+L32 629 hair 머리
+L32 630 image 영상
+L32 631 language 언어
+L32 632 market 시장
+L32 633 plane 비행기
+L32 634 private 은밀한
+L32 635 restaurant 레스토랑
+L32 636 size 크기
+L32 637 sky 하늘
+L32 638 smart 똑똑한
+L32 639 thank 감사
+L32 640 weather 날씨
+L33 641 actor 배우
+L33 642 bottle
+병
+L33 643 cloth
+천
+L33 644 coat 코트
+L33 645 destroy 멸하다
+L33 646 everywhere 어디에나
+L33 647 finger 손가락
+L33 648 guide 안내서
+L33 649 improve 돌리다
+L33 650 knife
+칼
+1000englishwords.com / 13
+L33 651 large
+큰
+L33 652 mistake 잘못
+L33 653 ocean 대양
+L33 654 plant 식물
+L33 655 repeat 반복
+L33 656 salt 소금
+L33 657 special 특별한
+L33 658 teach 가르치다
+L33 659 uncle 삼촌
+L33 660 winter 겨울
+L34 661 angry 성난
+L34 662 article
+조
+L34 663 build 짓다
+L34 664 dirty 더러운
+L34 665 except
+외
+L34 666 famous 유명한
+L34 667 gas 가스
+L34 668 hotel 호텔
+L34 669 cheap
+싼
+L34 670 interview 회견
+L34 671 moon
+달
+L34 672 nice 좋은
+L34 673 prepare 준비하다
+L34 674 prison 감옥
+L34 675 rice
+쌀
+L34 676 seem 보다
+L34 677 skirt 치마
+L34 678 strange 이상한
+L34 679 train 기차
+L34 680 warm 따뜻한
+L35 681 account 계정
+L35 682 bird
+새
+L35 683 cloud 구름
+L35 684 comfortable 편안
+L35 685 damage 피해를 주다
+L35 686 dust 먼지
+L35 687 exercise 운동
+L35 688 favourite 특히 잘하는
+L35 689 hospital 병원
+L35 690 joke 농담
+L35 691 message 메시지
+L35 692 night
+밤
+L35 693 paint 페인트
+L35 694 pleasure
+낙
+L35 695 relationship 관계
+L35 696 science 과학
+L35 697 serious 진지한
+L35 698 spend 보내다
+L35 699 tired 피곤한
+L35 700 wrong 잘못된
+1000englishwords.com / 14
+L36 701 amount
+양
+L36 702 bank 은행
+L36 703 brown 갈색
+L36 704 crowd 군중
+L36 705 deal 거래
+L36 706 engine 엔진
+L36 707 follow 따르다
+L36 708 chocolate 초콜릿
+L36 709 individual 개인
+L36 710 left 왼쪽
+L36 711 meal 식사
+L36 712 oil 기름
+L36 713 pain 고통
+L36 714 probably 아마
+L36 715 replace 바꾸다
+L36 716 society 사회
+L36 717 square 광장
+L36 718 step 단계
+L36 719 temperature 온도
+L36 720 university 대학
+L37 721 accept 동의하기
+L37 722 advance 전진
+L37 723 bag 가방
+L37 724 captain 선장
+L37 725 centre 센터
+L37 726 demand 수요
+L37 727 enemy
+적
+L37 728 factory 공장
+L37 729 hungry 배고픈
+L37 730 illegal 불법
+L37 731 law
+법
+L37 732 nose
+코
+L37 733 petrol 가솔린
+L37 734 proud 교만한
+L37 735 responsible 책임
+L37 736 store 저장
+L37 737 successful 성공한
+L37 738 swim 수영
+L37 739 top 상단
+L37 740 win 승리
+L38 741 available 유효한
+L38 742 boat 보트
+L38 743 borrow 빌다
+L38 744 coast 연안
+L38 745 cream 크림
+L38 746 design 디자인
+L38 747 expression 표현
+L38 748 farm 농장
+L38 749 history 역사
+L38 750 injure 해치다
+1000englishwords.com / 15
+L38 751 map 지도
+L38 752 obtain 얻다
+L38 753 peaceful 평화로운
+L38 754 practise 연습
+L38 755 recently 최근에
+L38 756 shape 모양
+L38 757 silver
+은
+L38 758 smoke 연기
+L38 759 touch 접촉
+L38 760 wash 빨래
+L39 761 advantage 이점
+L39 762 attack 공격
+L39 763 butter 버터
+L39 764 club 클럽
+L39 765 college 칼리지
+L39 766 degree 정도
+L39 767 escape 탈출
+L39 768 gate
+문
+L39 769 independent 독립적
+인
+L39 770 listen 들리다
+L39 771 marry 얻다
+L39 772 object 목적
+L39 773 path 통로
+L39 774 quiet 조용한
+L39 775 refuse 폐물
+L39 776 subject (n) 제목
+L39 777 supply 공급
+L39 778 taste 맛이 나다
+L39 779 usually 보통
+L39 780 vegetable 야채
+L40 781 arrange 가지런 히하다
+L40 782 below 이하
+L40 783 cigarette 담배
+L40 784 cottage 시골집
+L40 785 department 학과
+L40 786 earn 벌다
+L40 787 front
+앞
+L40 788 gentle 부드러운
+L40 789 hat 모자
+L40 790 instrument 악기
+L40 791 machine 기계
+L40 792 newspaper 신문
+L40 793 parcel 꾸러미
+L40 794 religion 종교
+L40 795 repair 수리
+L40 796 serve 서브
+L40 797 shoulder 어깨
+L40 798 trip 여행
+L40 799 village 마을
+L40 800 wall
+벽
+1000englishwords.com / 16
+L41 801 arrive 태어나다
+L41 802 born 태어난
+L41 803 clothes
+천
+L41 804 correct 옳은
+L41 805 double 더블
+L41 806 English 영어
+L41 807 forget 잊다
+L41 808 goal
+골
+L41 809 hate 미움
+L41 810 kill 죽임
+L41 811 last 마지막
+L41 812 main 본관
+L41 813 pair
+쌍
+L41 814 promise 약속
+L41 815 regular 정규병
+L41 816 somewhere 어딘가에
+L41 817 space 우주
+L41 818 these 이들
+L41 819 useful 유능한
+L41 820 without 없이
+L42 821 animal 동물
+L42 822 beer 맥주
+L42 823 calm 고요한
+L42 824 copy
+부
+L42 825 dish 요리
+L42 826 express 표현하다
+L42 827 foreign 외국
+L42 828 guess 추측
+L42 829 husband 남편
+L42 830 lie 거짓말
+L42 831 mine 나의
+것
+L42 832 opinion 의견
+L42 833 passenger 승객
+L42 834 press 프레스
+L42 835 rule 규칙
+L42 836 sign 기호
+L42 837 support 지원하다
+L42 838 those
+그
+L42 839 wonderful 훌륭한
+L42 840 year
+년
+L43 841 afraid 두려워
+L43 842 board
+판
+L43 843 circle
+원
+L43 844 count 카운트
+L43 845 death 죽음
+L43 846 discover 발견하다
+L43 847 funny 이상한
+L43 848 guest 손님
+L43 849 horse
+말
+L43 850 lake 호수
+1000englishwords.com / 17
+L43 851 modern 현대
+L43 852 necessary 필요한
+L43 853 plenty 많은
+L43 854 profit 이익
+L43 855 reduce 줄이다
+L43 856 share 공유
+L43 857 steal 훔치다
+L43 858 trust 믿음
+L43 859 wish 소원
+L43 860 young 젊은
+L44 861 admire 감탄하다
+L44 862 allow 허용하다
+L44 863 battle 전투
+L44 864 climb 상승
+L44 865 complete 완전한
+L44 866 divide 나누기
+L44 867 effort 노력
+L44 868 fresh 신선한
+L44 869 hole 구멍
+L44 870 indeed 과연
+L44 871 marriage 결혼
+L44 872 outside 외부
+L44 873 pleasant 쾌적한
+L44 874 point 포인트
+L44 875 recent 충적세
+L44 876 secretary 비서
+L44 877 sing 노래
+L44 878 soft 부드러운
+L44 879 third 제삼
+L44 880 various 여러
+L45 881 adventure 모험
+L45 882 although 이기는 하지만
+L45 883 bottom 바닥
+L45 884 coin 동전
+L45 885 comfort 위로
+L45 886 drop 하락
+L45 887 equal 같은
+L45 888 gun
+총
+L45 889 intelligent 지적인
+L45 890 join 어울리다
+L45 891 laugh 웃음
+L45 892 middle 가운데
+L45 893 perform 행하다
+L45 894 plain 평원
+L45 895 row
+열
+L45 896 soldier 병사
+L45 897 surface 표면
+L45 898 thick 두꺼운
+L45 899 until 까지
+L45 900 wild 야생
+1000englishwords.com / 18
+L46 901 attempt 시도
+L46 902 bill 계산서
+L46 903 breathe 숨을 쉬다
+L46 904 cook
+쿡
+L46 905 defend 지키다
+L46 906 fat 지방
+L46 907 grey 회색
+L46 908 hot 뜨거운
+L46 909 character 캐릭터
+L46 910 import 수입
+L46 911 lose 잃다
+L46 912 mountain
+산
+L46 913 operation 조작
+L46 914 prize
+상
+L46 915 risk 위험
+L46 916 safe 안전한
+L46 917 suddenly 갑자기
+L46 918 suit 소송
+L46 919 type 유형
+L46 920 wood 목재
+L47 921 area 지역
+L47 922 asleep 죽어
+L47 923 bath 목욕
+L47 924 careless 경솔한
+L47 925 delay 지연
+L47 926 event 행사
+L47 927 foot
+발
+L47 928 hide 숨는 장소
+L47 929 chain 체인
+L47 930 international 국제적인
+L47 931 match 시합
+L47 932 nervous 긴장한
+L47 933 pity 동정
+L47 934 prove 알다
+L47 935 raise 올리다
+L47 936 shut 닫은
+L47 937 smell 냄새
+L47 938 straight 직진
+L47 939 trade 무역
+L47 940 variety 종류
+L48 941 admit 인정하다
+L48 942 attend 참석하다
+L48 943 branch 분기
+L48 944 coal 석탄
+L48 945 consist 이루어져 있다
+L48 946 declare 알리다
+L48 947 exact 정확한
+L48 948 farmer 농장주
+L48 949 instead 대신
+L48 950 jacket 재킷
+1000englishwords.com / 19
+L48 951 leg 다리
+L48 952 metal 금속
+L48 953 opposite 반대말
+L48 954 pound 파운드
+L48 955 roll
+롤
+L48 956 score 점수
+L48 957 shoot 사격
+L48 958 speech 연설
+L48 959 toilet 화장실
+L48 960 whose 누구의
+L49 961 attitude 태도
+L49 962 brave 용감한
+L49 963 contain 있다
+L49 964 doubt 의심
+L49 965 experience 경험
+L49 966 flat 플랫
+L49 967 guard 가드
+L49 968 heavy 무거운
+L49 969 charge 요금
+L49 970 iron
+철
+L49 971 medicine
+약
+L49 972 noise 소음
+L49 973 politics 정치
+L49 974 pour 붓다
+L49 975 rush 돌진
+L49 976 smooth 부드러운
+L49 977 spread 확산
+L49 978 suggest 제안하다
+L49 979 trouble 수고
+L49 980 west 서쪽
+L50 981 average 평균
+L50 982 belong 있다
+L50 983 certainly 확실히
+L50 984 crime 범죄
+L50 985 duty 의무
+L50 986 either 어느
+한
+쪽
+L50 987 fail 불합격
+L50 988 health 건강
+L50 989 influence 영향
+L50 990 leader 리더
+L50 991 measure 법안
+L50 992 offer 제공
+L50 993 pile 말뚝
+L50 994 regard 관련
+L50 995 rough 거칠게
+L50 996 series 시리즈
+L50 997 spoil 약탈
+L50 998 spot 자리
+L50 999 thin 얇은
+L50 1000 vote 투표
+1000englishwords.com / 20

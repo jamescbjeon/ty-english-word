@@ -6,7 +6,9 @@ const dateSelect = document.getElementById('date-select');
 const viewAllBtn = document.getElementById('view-all-btn');
 const startWordPracticeBtn = document.getElementById('start-word-practice-btn'); 
 const startMeaningPracticeBtn = document.getElementById('start-meaning-practice-btn'); 
-const startMockTestBtn = document.getElementById('start-mock-test-btn'); 
+const mockEnKoBtn = document.getElementById('mock-en-ko-btn');
+const mockKoEnBtn = document.getElementById('mock-ko-en-btn');
+const mockRandomBtn = document.getElementById('mock-random-btn');
 
 const loadingStatus = document.getElementById('loading-status');
 
@@ -173,8 +175,12 @@ function setupEventListeners() {
     viewAllBtn.addEventListener('click', handleViewAll);
     startWordPracticeBtn.addEventListener('click', () => handleStartPractice('word'));
     startMeaningPracticeBtn.addEventListener('click', () => handleStartPractice('meaning'));
-    startMockTestBtn.addEventListener('click', handleStartMockTest);
     
+    // 모의 테스트 3종 이벤트 연결
+    mockEnKoBtn.addEventListener('click', () => handleStartMockTest('en-ko'));
+    mockKoEnBtn.addEventListener('click', () => handleStartMockTest('ko-en'));
+    mockRandomBtn.addEventListener('click', () => handleStartMockTest('random'));
+
     document.querySelectorAll('.back-btn').forEach(button => {
         button.addEventListener('click', () => showScreen('main'));
     });
@@ -250,21 +256,34 @@ async function handleStartPractice(mode) {
     displayQuiz();
 }
 
-async function handleStartMockTest() {
+async function handleStartMockTest(mode) {
     const selectedKey = dateSelect.value;
-    
-    // 💡 참고: 모의 테스트는 모든 단어를 대상으로 실행
     currentWords = await fetchWords(selectedKey);
     
-    if (currentWords.length === 0) {
-        return;
-    }
+    if (currentWords.length === 0) return;
     
     shuffledWords = shuffleArray([...currentWords]); 
 
-    mockTestInstruction.textContent = `${shuffledWords.length}개의 한국어 뜻을 보고 영어 단어를 적어보세요.`;
+    // 모드에 따른 안내 문구 설정
+    let instruction = "";
+    if (mode === 'en-ko') instruction = "영어 단어를 보고 한국어 뜻을 적어보세요.";
+    else if (mode === 'ko-en') instruction = "한국어 뜻을 보고 영어 단어를 적어보세요.";
+    else instruction = "제시된 단어의 반대 언어(영어↔한국어)로 답을 적어보세요.";
+
+    mockTestInstruction.textContent = `${shuffledWords.length}문항 - ${instruction}`;
+    
+    // 문제 목록 생성
     mockTestQuestions.innerHTML = shuffledWords.map((item, index) => {
-        return `<p><strong>${index + 1}.</strong> ${item.meaning}</p>`;
+        let questionText = "";
+        
+        // 랜덤 모드일 경우 각 문제마다 무작위 결정 (0: 영어문제, 1: 한국어문제)
+        const isEnQuestion = (mode === 'en-ko') ? true : (mode === 'ko-en' ? false : Math.random() < 0.5);
+        
+        // 나중에 정답 확인을 위해 아이템에 퀴즈 타입 저장
+        item.currentQuizType = isEnQuestion ? 'en' : 'ko';
+        
+        questionText = isEnQuestion ? item.word : item.meaning;
+        return `<p><strong>${index + 1}.</strong> ${questionText}</p>`;
     }).join('');
     
     mockTestAnswerContainer.innerHTML = '';
@@ -321,11 +340,13 @@ function handleMockTestShowAnswer() {
     mockTestShowAnswerBtn.classList.add('hidden');
     
     mockTestAnswerContainer.innerHTML = shuffledWords.map((item, index) => {
-        return `<p><strong>${index + 1}.</strong> ${item.meaning} &rarr; <strong>${item.word}</strong></p>`;
+        const question = item.currentQuizType === 'en' ? item.word : item.meaning;
+        const answer = item.currentQuizType === 'en' ? item.meaning : item.word;
+        
+        return `<p><strong>${index + 1}.</strong> ${question} &rarr; <strong>${answer}</strong></p>`;
     }).join('');
     
     mockTestAnswerContainer.classList.remove('hidden');
-    // alert("정답이 공개되었습니다! 스스로 채점해보세요.");
 }
 
 
