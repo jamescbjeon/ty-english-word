@@ -135,7 +135,7 @@ async function initializeApp() {
         loadingStatus.textContent = '데이터 로딩 중...';
     }
     
-    keys.sort((a, b) => b.localeCompare(a)); 
+    keys.sort((a, b) => a.localeCompare(b)); 
 
     dateSelect.innerHTML = ''; 
     if (keys.length === 0) {
