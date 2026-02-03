@@ -219,7 +219,8 @@ async function handleViewAll() {
     tbody.innerHTML = '';
 
     // 💡 참고: 단어 목록 보기에서는 모든 단어 표시 (memorize 필드는 사용하지 않음)
-    currentWords.forEach(item => {
+    const practiceWords = currentWords.filter(item => item.memorize !== 'O');
+    practiceWords.forEach(item => {
         const row = tbody.insertRow();
         row.insertCell().textContent = item.word;
         row.insertCell().textContent = item.meaning;
@@ -259,10 +260,11 @@ async function handleStartPractice(mode) {
 async function handleStartMockTest(mode) {
     const selectedKey = dateSelect.value;
     currentWords = await fetchWords(selectedKey);
+    const practiceWords = currentWords.filter(item => item.memorize !== 'O');
     
-    if (currentWords.length === 0) return;
+    if (practiceWords.length === 0) return;
     
-    shuffledWords = shuffleArray([...currentWords]); 
+    shuffledWords = shuffleArray([...practiceWords]); 
 
     // 모드에 따른 안내 문구 설정
     let instruction = "";

@@ -1,32 +1,32 @@
-word,meaning
-vacation,휴가
-parents,부모님
+word,meaning,memorize
+vacation,휴가,O
+parents,부모님,O
 east,동쪽
 west,서쪽
 south,남쪽
 north,북쪽
-round up,모으다
-cow,소
+round up,모으다,O
+cow,소,O
 We need someone to round up all those cows.,누군가 그 소들을 모두 모아야 해.
 probably,아마도
-drool,침을 흘리다
-bib,턱받이
-load up,실다
+drool,침을 흘리다,O
+bib,턱받이,O
+load up,싣다,O
 head,향하다
-comic book,만화책
-crossword puzzle,십자 단어퀴즈
-rest stop,휴게소
-parking sign,주차 표지판
-wag a tail,꼬리를 흔들다
+comic book,만화책,O
+crossword puzzle,십자 단어퀴즈,O
+rest stop,휴게소,O
+parking sign,주차 표지판,O
+wag a tail,꼬리를 흔들다,O
 inn,여관
-owner,주인
-bandanna,반다나 (목에 매는 손수건)
-rest,휴식; 쉬다
+owner,주인,O
+bandanna,반다나 (목에 매는 손수건),O
+rest,휴식; 쉬다,O
 lawn,잔디
-chase,쫓다
-tumbleweed, 굴러다니는 풀
+chase,쫓다,O
+tumbleweed, 굴러다니는 풀,O
 tumble,굴러가다
-throw,던지다
+throw,던지다,O
 It had toys no one had to throw.,아무도 던질 필요 없는 장난감들이 있었다.
 desert,사막
 cactus,선인장
@@ -34,7 +34,7 @@ lizard,도마뱀
 through,~을 통과해
 canyon,협곡
 ram,숫양
-rock,바위
+rock,바위,O
 souvenir,기념품
 snow globe,스노우볼 (흔들면 눈이 내리는 유리 장식품)
 He bought a snow globe with a cowboy inside.,그는 카우보이가 들어있는 스노우볼을 샀다.

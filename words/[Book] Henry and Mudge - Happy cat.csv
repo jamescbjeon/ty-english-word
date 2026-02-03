@@ -1,51 +1,51 @@
-word,meaning
-suddenly,갑자기
-bark,짖다
-steps,계단
+word,meaning,memorize
+suddenly,갑자기,O
+bark,짖다,O
+steps,계단,O
 shabby,초라한
 Sitting on the steps was the shabbiest cat Henry had ever seen.,계단에 앉아 있는 것은 헨리가 본 것 중 가장 초라한 고양이였다.
-saggy,처진
-belly,배
+saggy,처진,O
+belly,배,O
 skinny,말라빠진
-fur,털
+fur,털,O
 mashed,으깬
 prune,말린 자두
-kitty,고양이
+kitty,고양이,O
 stray,길잃은
 It might be a stray.,길잃은 동물일지도 몰라.
-pet,애완동물
-carry,들다
-wag,흔들다
-disaster,재앙
-Nice for a disaster.,재앙치고는 괜찮네.
-bowl,그릇
+pet,애완동물,O
+carry,들다,O
+wag,흔들다,O
+disaster,재앙,O
+Nice for a disaster.,재앙치고는 괜찮네.,O
+bowl,그릇,O
 in a row,연속으로
 lick,핥다
 turkey,칠면조
 gizzard,모래주머니
-closet,벽장
+closet,벽장,O
 bathtub,욕조
 good manners,예의 바름
 The cat also made Mudge use good manners.,그 고양이는 Mudge도 예의 바르게 행동하도록 만들었다.
-cracker,크래커 과자
+cracker,크래커 과자,O
 mind,신경 쓰다
 wonder,궁금해하다
-take care of,돌보다
+take care of,돌보다,O
 decide,결정하다
-poster,포스터
-grocery store,식료품점
+poster,포스터,O
+grocery store,식료품점,O
 drugstore,약국
-by mistake,실수로
-couch,쇼파
+by mistake,실수로,O
+couch,쇼파,O
 purr,가르랑거리다
 rude,무례한
 make fun of,놀리다
-Can I help you?,도와 드릴까요?
+Can I help you?,도와 드릴까요?,O
 purse,지갑
 be looking for,찾고 있다
-I’m so happy to have him back.,그를 다시 되찾아서 정말 기뻐요.
+I’m so happy to have him back.,그를 다시 되찾아서 정말 기뻐요.,O
 lump,덩어리
 throat,목구멍
 Henry got a lump in his throat.,헨리는 목에 덩어리가 걸린 것 같았다.
 take a nap,낮잠 자다
-badge,배지
+badge,배지,O
